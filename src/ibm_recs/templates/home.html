@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block body %}
+<h1>IBM Watson Studio article recommendations</h1>
+<form action="/user" method="get"><label>User id <input name="id" inputmode="numeric" maxlength="9" required></label><button>Recommend</button></form>
+<form action="/article" method="get"><label>Article id <input name="id" inputmode="numeric" maxlength="9" required></label><button>Similar articles</button></form>
+<form action="/search" method="get"><label>Title search <input name="q" maxlength="100" required></label><button>Search</button></form>
+<h2>Most viewed (what a new user is shown)</h2>
+<ol>{% for r in top %}<li><a href="/article?id={{ r.article_id }}">{{ r.title }}</a> <span class="muted">({{ r.score|int }} views)</span></li>{% endfor %}</ol>
+{% endblock %}

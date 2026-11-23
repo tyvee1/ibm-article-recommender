@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}IBM article recommendations{% endblock %}</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 52rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; color: #1d1d1f; }
+  h1 { font-size: 1.4rem; } h2 { font-size: 1.1rem; margin-top: 1.6rem; }
+  form { display: flex; gap: .5rem; flex-wrap: wrap; margin: .4rem 0; }
+  input { padding: .3rem .5rem; } button { padding: .3rem .8rem; }
+  ol, ul { padding-left: 1.4rem; } .muted { color: #6e6e73; font-size: .9rem; }
+  nav a { margin-right: 1rem; }
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); gap: 1.5rem; }
+</style>
+</head>
+<body>
+<nav><a href="/">Home</a><a href="/health">Health</a></nav>
+{% block body %}{% endblock %}
+<p class="muted">Recommendations are computed from IBM Watson Studio community interaction data (course data). They show what similar readers opened, not what is right for anyone, and must not be used to judge people.</p>
+</body>
+</html>

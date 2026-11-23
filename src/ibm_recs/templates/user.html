@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}User {{ user_id }}{% endblock %}
+{% block body %}
+<h1>User {{ user_id }}</h1>
+{% if known %}
+<p>Recommended from the users whose reading is most similar, most-viewed first within each.</p>
+{% else %}
+<p>No reading history for this user, so these are the most-viewed articles.</p>
+{% endif %}
+<div class="cols">
+<div><h2>Recommended</h2><ol>{% for r in recs %}<li><a href="/article?id={{ r.article_id }}">{{ r.title }}</a></li>{% endfor %}</ol></div>
+{% if known %}<div><h2>Already read ({{ read|length }})</h2><ul>{% for a, t in read %}<li><a href="/article?id={{ a }}">{{ t }}</a></li>{% endfor %}</ul></div>{% endif %}
+</div>
+{% endblock %}

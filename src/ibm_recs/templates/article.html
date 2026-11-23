@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Article {{ article_id }}{% endblock %}
+{% block body %}
+<h1>{{ title }}</h1>
+<p class="muted">Article {{ article_id }}</p>
+<div class="cols">
+<div><h2>Similar titles</h2><ol>{% for r in by_title %}<li><a href="/article?id={{ r.article_id }}">{{ r.title }}</a></li>{% endfor %}</ol></div>
+<div><h2>Read by similar people</h2><ol>{% for r in by_readers %}<li><a href="/article?id={{ r.article_id }}">{{ r.title }}</a></li>{% endfor %}</ol></div>
+</div>
+{% endblock %}

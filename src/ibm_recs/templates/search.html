@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Search{% endblock %}
+{% block body %}
+<h1>Titles containing "{{ query }}"</h1>
+{% if hits %}<ol>{% for a, t in hits %}<li><a href="/article?id={{ a }}">{{ t }}</a></li>{% endfor %}</ol>{% else %}<p>No matching titles.</p>{% endif %}
+{% endblock %}
