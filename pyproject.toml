@@ -9,7 +9,7 @@ description = "Article recommendations for the IBM Watson Studio community: rank
 readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
-authors = [{ name = "Tyrone G. Verdell" }]
+authors = [{ name = "Ty" }]
 dependencies = [
   "numpy>=2.0",
   "pandas>=2.2",

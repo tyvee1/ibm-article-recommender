@@ -1,6 +1,6 @@
 # Article recommendations for the IBM Watson Studio community
 
-Author: Tyrone G. Verdell
+Author: Ty
 
 Udacity Data Scientist Nanodegree, Course 5 (Unsupervised Machine Learning
 and Recommendation Systems): the "Recommendations with IBM" project.
@@ -95,6 +95,6 @@ stop it. It listens on this computer only.
 
 ## 5. Licensing, authors and acknowledgements
 
-- Code written for this project (the notebook's solutions, `src/` and `tests/`): MIT licence, see `LICENSE`. Author: Tyrone G. Verdell.
+- Code written for this project (the notebook's solutions, `src/` and `tests/`): MIT licence, see `LICENSE`. Author: Ty.
 - The starter notebook's questions, `project_tests.py`, the `.p` answer files and the interaction data come from Udacity's project repository, [udacity/dsnd-recommendation-systems-project](https://github.com/udacity/dsnd-recommendation-systems-project). They are used under Udacity's educational-content terms and are not covered by the MIT licence.
 - The interaction data records reading on the IBM Watson Studio community platform, provided by IBM to Udacity for this project.
